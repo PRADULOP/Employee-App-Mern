@@ -9,7 +9,7 @@ const AdminPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axiosInstance.get('http://localhost:3000/employee')
+    axiosInstance.get('https://employee-app-mern-backend.onrender.com/employee')
       .then((res) => {
         setEmployees(res.data);
       })
@@ -23,7 +23,7 @@ const AdminPage = () => {
   };
 
   const handleDelete = (val) => {
-    axiosInstance.delete(`http://localhost:3000/employee/delete/${val._id}`)
+    axiosInstance.delete(`https://employee-app-mern-backend.onrender.com/employee/delete/${val._id}`)
       .then((res) => {
         alert(res.data);
         setEmployees(employees.filter(item => item._id !== val._id));
