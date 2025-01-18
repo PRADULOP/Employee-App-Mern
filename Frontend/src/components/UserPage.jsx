@@ -7,7 +7,7 @@ const UserPage = () => {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    axiosInstance.get('http://localhost:3000/employee')
+    axiosInstance.get('https://employee-app-mern-backend.onrender.com/employee')
       .then((res) => {
         setEmployees(res.data);
       })
