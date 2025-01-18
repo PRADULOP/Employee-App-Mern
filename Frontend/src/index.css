@@ -1,0 +1,10 @@
+body {
+  background-image: url('https://img.freepik.com/free-photo/silhouettes-executives-interacting_1098-1787.jpg?t=st=1737224582~exp=1737228182~hmac=59b4d02098235d8bede3490460d0c1548d3993e3238af0ae57c3be103214d0c0&w=1800');
+  background-size: cover;
+}
+
+.textField {
+  background-color: white;
+  border-radius: 4px;
+}
+
